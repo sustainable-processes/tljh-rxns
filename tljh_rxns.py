@@ -14,6 +14,7 @@ def tljh_extra_user_pip_packages():
         'ipdb>=0.12',
     ]
 
+
 @hookimpl
 def tljh_extra_user_conda_packages():
     return [
@@ -30,3 +31,12 @@ def tljh_config_post_install(config):
     user_environment['default_app'] = user_environment.get('default_app', 'jupyterlab')
 
     config['user_environment'] = user_environment
+
+@hookimpl
+def tljh_post_install():
+    """
+    Post install script to be executed after installation
+    and after all the other hooks.
+    This can be arbitrary Python code.
+    """
+    "brew install pipenv"

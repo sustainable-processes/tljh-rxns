@@ -7,5 +7,5 @@ that installs packages useful for chemistry.
 
 1. **NUMFocus**: Scipy, numpy, matplotlib and pandas
 2. **Machine Learning**: scikit-learn, pytorch, tensorflow
-3. **Chemistry**: rdkit <!--Add summit when it's public>
+3. **Chemistry**: rdkit <!--Add summit when it's public-->
 4. **Other**: graph-tool
